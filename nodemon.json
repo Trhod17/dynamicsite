@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "execMap": {
+    "pde": "processing --sketch={{pwd}} --run"
+  }
+}

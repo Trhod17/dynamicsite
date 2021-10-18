@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 0.06fr auto;
+    grid-template-areas: 
+    'topbar topbar topbar'
+    'sidebar content content'
+    'sidebar content content'
+    'sidebar content content'
+    'sidebar content content'
+    'sidebar content content'
+    ;
+}
+
+@import 'navigation/nav';
+
+.page {
+    grid-area: content;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+}

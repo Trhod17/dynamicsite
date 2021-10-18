@@ -1,0 +1,69 @@
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #1d8f21;
+  /* Green */
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  grid-template-rows: 0.06fr auto;
+  grid-template-areas: "topbar topbar topbar" "sidebar content content" "sidebar content content" "sidebar content content" "sidebar content content" "sidebar content content";
+}
+
+.sidebar-nav {
+  grid-area: sidebar;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #f4a261;
+}
+
+.topbar-nav {
+  grid-area: topbar;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  border: 1px solid black;
+  margin: 0;
+  background-color: #f4a261;
+  justify-content: right;
+}
+
+.page {
+  grid-area: content;
+  display: block;
+  border: 1px solid black;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
